@@ -1,8 +1,7 @@
 // responsiivisuus, navigointipalkin vaihtaminen
 
-let mobiili = window.matchMedia("(max-width: 700px)");
-
 function navigointi() {
+  let mobiili = window.matchMedia("(max-width: 700px)");
   let mobiililinkit = document.getElementById("mobiililinkit");
 
   if (mobiili.matches && mobiililinkit.style.display === "none") {
