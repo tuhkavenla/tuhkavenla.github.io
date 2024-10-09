@@ -92,6 +92,7 @@ let cheerslideIndex = 1;
 window.onload = function () {
   naytaIntiaSlide(1);
   naytaCheerSlide(1);
+  naytaPeliSlide(1);
 };
 
 // intia-gallerian asetukset
@@ -171,10 +172,6 @@ function naytaCheerSlide(n) {
 // peligalleria
 
 let pelislideIndex = 1;
-
-window.onload = function () {
-  naytaPeliSlide(1);
-};
 
 function liikuPeliSlide(n) {
   naytaPeliSlide((pelislideIndex += n));
