@@ -17,13 +17,13 @@ function navigointi() {
 function tummaTila() {
   document
     .getElementById("tyyli")
-    .setAttribute("href", "../css/tummatyyli.css");
+    .setAttribute("href", "/css/tummatyyli.css");
   document
     .getElementById("mobiilityyli")
-    .setAttribute("href", "../css/tummamobiilityyli.css");
+    .setAttribute("href", "/css/tummamobiilityyli.css");
   document
     .getElementById("palkittyyli")
-    .setAttribute("href", "../css/tummapalkittyyli.css");
+    .setAttribute("href", "/css/tummapalkittyyli.css");
 
   document.getElementById("logo").setAttribute("src", "../img/tummalogo.png");
 
@@ -35,12 +35,12 @@ function valoTila() {
   document.getElementById("tyyli").setAttribute("href", "../css/tyyli.css");
   document
     .getElementById("mobiilityyli")
-    .setAttribute("href", "../css/mobiilityyli.css");
+    .setAttribute("href", "/css/mobiilityyli.css");
   document
     .getElementById("palkittyyli")
-    .setAttribute("href", "../css/palkittyyli.css");
+    .setAttribute("href", "/css/palkittyyli.css");
 
-  document.getElementById("logo").setAttribute("src", "../img/logo.png");
+  document.getElementById("logo").setAttribute("src", "/img/logo.png");
 
   document.getElementById("valonappi").style.display = "none";
   document.getElementById("tummanappi").style.display = "block";
