@@ -2,7 +2,7 @@ body {
   color: #723d46;
   font-family: "Pangolin";
   margin: 50px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 24px;
   background-image: url("../img/tausta.jpg");
 }
@@ -40,13 +40,14 @@ nav {
   padding-bottom: 20px;
   line-height: 170%;
   margin-bottom: 30px;
+  margin-left: 30px;
 
   font-family: "Leckerli One";
 
   text-shadow: 1px 1px 0 #ffe1a8, -1px 1px 0 #ffe1a8, -1px -1px 0 #ffe1a8,
     1px -1px 0 #ffe1a8;
 
-  width: 50%;
+  width: 70%;
 }
 
 #navigointi {
