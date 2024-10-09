@@ -90,10 +90,6 @@ let intiaslideIndex = 1;
 let cheerslideIndex = 1;
 
 window.addEventListener('load', function() {
-  naytaPeliSlide(1);
-});
-
-window.addEventListener('load', function() {
   naytaIntiaSlide(1);
 });
 
@@ -178,6 +174,11 @@ function naytaCheerSlide(n) {
 // peligalleria
 
 let pelislideIndex = 1;
+
+window.addEventListener('load', function() {
+  naytaPeliSlide(1);
+});
+
 
 function liikuPeliSlide(n) {
   naytaPeliSlide((pelislideIndex += n));
