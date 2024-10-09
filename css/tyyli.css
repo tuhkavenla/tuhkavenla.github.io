@@ -1,0 +1,162 @@
+body {
+  color: #723d46;
+  font-family: "Nerko One";
+  margin: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  background-image: url("../img/tausta.jpg");
+}
+
+#vasen {
+  max-width: 1000px;
+  width: 30%;
+  overflow: visible;
+  float: left;
+  text-align: center;
+  position: fixed;
+  margin-left: -50px;
+}
+
+#logo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: inline-block;
+  padding: 0 20px;
+  padding-top: 20px;
+  font-size: 22px;
+  font-family: "Leckerli One";
+  cursor: pointer;
+  outline: none;
+  color: #ffe1a8;
+  background-color: #e26d5c;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 9px #723d46;
+
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 170%;
+  margin-bottom: 30px;
+
+  font-family: "Leckerli One";
+
+  text-shadow: 1px 1px 0 #ffe1a8, -1px 1px 0 #ffe1a8, -1px -1px 0 #ffe1a8,
+    1px -1px 0 #ffe1a8;
+
+  width: 50%;
+}
+
+#navigointi {
+  color: #472d30;
+  font-size: 24px;
+  margin-top: 0;
+  text-shadow: 1px 1px 0 #ffe1a8, -1px 1px 0 #ffe1a8, -1px -1px 0 #ffe1a8,
+    1px -1px 0 #ffe1a8;
+}
+
+#mobiilinavi {
+  display: none;
+}
+
+a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #723d46;
+}
+
+a:hover {
+  color: #472d30;
+}
+
+#oikea {
+  max-width: 1900px;
+  width: 69%;
+
+  float: right;
+  vertical-align: top;
+
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#tummanappi {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+#valonappi {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Leckerli One";
+  color: #472d30;
+  font-size: 36px;
+
+  text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff;
+}
+
+h2 {
+  font-family: "Leckerli One";
+  color: #472d30;
+  font-size: 28px;
+  text-align: center;
+
+  text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff;
+}
+
+.teksti {
+  background-color: #ffeec4;
+  border-radius: 10px;
+}
+
+.painike {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Leckerli One";
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #ffe1a8;
+  background-color: #e26d5c;
+  border: none;
+  border-radius: 13px;
+  box-shadow: 0 9px #723d46;
+}
+
+.painike:hover {
+  background-color: #ca5948;
+}
+
+.painike:active {
+  background-color: #e26d5c;
+  box-shadow: 0 5px #552a31;
+  transform: translateY(4px);
+}
+
+.kappale {
+  text-align: left;
+}
+
+.spotify {
+  width: 60%;
+  height: 100px;
+  border: none;
+  border-radius: 12px
+}

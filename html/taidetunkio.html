@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Tuhkiksen sopukka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tutustu Tuhkikseen." />
+    <meta name="author" content="Venla Tuhkanen" />
+    <link id="tyyli" rel="stylesheet" href="../css/tyyli.css" />
+    <link id="mobiilityyli" rel="stylesheet" href="../css/mobiilityyli.css" />
+    <link id="palkittyyli" rel="stylesheet" href="../css/palkittyyli.css" />
+    <link rel="stylesheet" href="../css/taidetyyli.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article id="vasen">
+      <img id="logo" src="../img/logo.png" alt="Tuhkiksen sopukka -logo" />
+      <nav id="konenavi">
+        <h2 id="navigointi">Navigointi</h2>
+        <div id="linkit">
+          <a href="index.html">Etusivu</a>
+          <br />
+          <a href="pelinurkka.html">Pelinurkka</a>
+          <br />
+          <a href="taidetunkio.html">Taidetunkio</a>
+          <br />
+          <a href="radiolista.html">Radiolista</a>
+        </div>
+      </nav>
+    </article>
+    <nav id="mobiilinavi">
+      <button id="navinappi" onclick="navigointi()">Navigointi</button>
+      <div id="mobiililinkit">
+        <a href="index.html">Etusivu</a>
+        <br />
+        <a href="pelinurkka.html">Pelinurkka</a>
+        <br />
+        <a href="taidetunkio.html">Taidetunkio</a>
+        <br />
+        <a href="radiolista.html">Radiolista</a>
+      </div>
+    </nav>
+    <article id="oikea">
+      <button id="tummanappi" class="painike" onclick="tummaTila()">
+        Valot pois!
+      </button>
+      <button id="valonappi" class="painike" onclick="valoTila()">
+        Valot päälle!
+      </button>
+      <h1>Taidetunkio</h1>
+      <p>
+        <span class="teksti">
+          Joskus tulee kuviakin otettua. Kuvauskohteet ovat aika sekalaista
+          settiä, mikä yllätys.
+        </span>
+      </p>
+
+      <!-- kuvagalleria 1 -->
+
+      <h2>Intian väriloistoa</h2>
+      <p>
+        <span class="teksti"
+          >Lukioni sattui tarjoamaan mahdollisuuden tunkea mukaan
+          ysiluokkalaisten natiivienglannin valinnaisen päätösreissulle.
+          Tuntemattomien yläastelaisten kanssa reissaaminen voi kuulostaa hieman
+          epähoukuttelevalta, mutta matkakohde sattui olemaan Intia. Niinpä
+          minä, luokkakaverini ja kummankin kamerat lähtivät ihmettelemään ja
+          ikuistamaan Intian väriloistoa.</span
+        >
+      </p>
+      <div class="galleria">
+        <div class="slidet intia">
+          <div class="numero intia">1 / 5</div>
+          <img src="../img/intia1.jpg" alt="Tuk-tuk-kulkuneuvo" />
+        </div>
+
+        <!-- täysikokoiset kuvat ja niiden numerotekstit -->
+        <div class="slidet intia">
+          <div class="numero intia">2 / 5</div>
+          <img
+            src="../img/intia2.jpg"
+            alt="Myyntikoju, etualalla värikkäitä sateenvarjoja"
+          />
+        </div>
+
+        <div class="slidet intia">
+          <div class="numero intia">3 / 5</div>
+          <img
+            src="../img/intia3.jpg"
+            alt="Hyönteinen kukassa, taustalla Taj Mahal"
+          />
+        </div>
+
+        <div class="slidet intia">
+          <div class="numero intia">4 / 5</div>
+          <img src="../img/intia4.jpg" alt="Ruokakoju" />
+        </div>
+
+        <div class="slidet intia">
+          <div class="numero intia">5 / 5</div>
+          <img
+            src="../img/intia5.jpg"
+            alt="Moottoripyöräilijä ajaa koululaisten ohi"
+          />
+        </div>
+
+        <!-- painikkeet, joilla liikutaan -->
+        <a class="edellinen intia" onclick="liikuIntiaSlide(-1)">&#10094;</a>
+        <a class="seuraava intia" onclick="liikuIntiaSlide(1)">&#10095;</a>
+        <!-- pikkukuvat -->
+        <div class="rivi">
+          <div class="sarake">
+            <img
+              class="pikkukuva intia"
+              src="../img/pikkuintia1.jpg"
+              onclick="isoIntiaSlide(1)"
+              alt="Tuk-tuk-kulkuneuvo"
+            />
+          </div>
+
+          <div class="sarake">
+            <img
+              class="pikkukuva intia"
+              src="../img/pikkuintia2.jpg"
+              onclick="isoIntiaSlide(2)"
+              alt="Myyntikoju, etualalla värikkäitä sateenvarjoja"
+            />
+          </div>
+
+          <div class="sarake">
+            <img
+              class="pikkukuva intia"
+              src="../img/pikkuintia3.jpg"
+              onclick="isoIntiaSlide(3)"
+              alt="Hyönteinen kukassa, taustalla Taj Mahal"
+            />
+          </div>
+
+          <div class="sarake">
+            <img
+              class="pikkukuva intia"
+              src="../img/pikkuintia4.jpg"
+              onclick="isoIntiaSlide(4)"
+              alt="Ruokakoju"
+            />
+          </div>
+
+          <div class="sarake">
+            <img
+              class="pikkukuva intia"
+              src="../img/pikkuintia5.jpg"
+              onclick="isoIntiaSlide(5)"
+              alt="Moottoripyöräilijä ajaa koululaisten ohi"
+            />
+          </div>
+        </div>
+      </div>
+
+      <h2>Rakkaudesta lajiin</h2>
+      <p>
+        <span class="teksti"
+          >Olkapääni mentyä sijoiltaan käytin kisamatkan oman joukkueeni
+          somekuvien ottamiseen. Siitä se lähti, lopulta olin pandemian aikana
+          kuvaamassa Suomen maajoukkueiden MM-kisojen kisasuorituksia uutiskuvia
+          varten. Kuvien laadusta voi olla montaa mieltä, mutta kukaan ei voi
+          sanoa, etteikö pienen harrastelijakameransa kanssa innokkaasti kuvia
+          räpsinyt Tuhkis ilahduttanut montaa harrastajaa ja tehnyt hommaa
+          täysin rakkaudesta lajiin.</span
+        >
+      </p>
+      <div class="galleria">
+        <div class="slidet cheer">
+          <div class="numero cheer">1 / 5</div>
+          <img
+            src="../img/cheer1.jpg"
+            alt="Junioreiden sekamaajoukkue tekemässä MM-kisaohjelman huutoa. Etualalla tyttö huiskien kanssa."
+          />
+        </div>
+
+        <!-- täysikokoiset kuvat ja niiden numerotekstit -->
+        <div class="slidet cheer">
+          <div class="numero cheer">2 / 5</div>
+          <img
+            src="../img/cheer2.jpg"
+            alt="Cheerleaderit tekemässä stunttia, jossa nostajat pyörittävät yhdellä jalalla seisovaa nousijaa."
+          />
+        </div>
+
+        <div class="slidet cheer">
+          <div class="numero cheer">3 / 5</div>
+          <img
+            src="../img/cheer3.jpg"
+            alt="Cheerleaderit tekemässä stunttia, nostajat valmiina nostamaan akrobaattista liikettä tekevän tytön."
+          />
+        </div>
+
+        <div class="slidet cheer">
+          <div class="numero cheer">4 / 5</div>
+          <img
+            src="../img/cheer4.jpg"
+            alt="Cheerleading-stuntti, jossa käsillä seisova tyttö nostettu korkealle."
+          />
+        </div>
+
+        <div class="slidet cheer">
+          <div class="numero cheer">5 / 5</div>
+          <img
+            src="../img/cheer5.jpg"
+            alt="Cheerleading-joukkueen harjoitukset, ryhmät nostavat yhdellä jalalla seisovia nousijoita."
+          />
+        </div>
+
+        <!-- painikkeet, joilla liikutaan -->
+        <a class="edellinen cheer" onclick="liikuCheerSlide(-1)">&#10094;</a>
+        <a class="seuraava cheer" onclick="liikuCheerSlide(1)">&#10095;</a>
+
+        <!-- pikkukuvat -->
+        <div class="rivi">
+          <div class="sarake">
+            <img
+              class="pikkukuva cheer"
+              src="../img/pikkucheer1.jpg"
+              onclick="isoCheerSlide(1)"
+              alt="Junioreiden sekamaajoukkue tekemässä MM-kisaohjelman huutoa. Etualalla tyttö huiskien kanssa."
+            />
+          </div>
+
+          <div class="sarake">
+            <img
+              class="pikkukuva cheer"
+              src="../img/pikkucheer2.jpg"
+              onclick="isoCheerSlide(2)"
+              alt="Cheerleaderit tekemässä stunttia, jossa nostajat pyörittävät yhdellä jalalla seisovaa nousijaa."
+            />
+          </div>
+
+          <div class="sarake">
+            <img
+              class="pikkukuva cheer"
+              src="../img/pikkucheer3.jpg"
+              onclick="isoCheerSlide(3)"
+              alt="Cheerleaderit tekemässä stunttia, nostajat valmiina nostamaan akrobaattista liikettä tekevän tytön."
+            />
+          </div>
+
+          <div class="sarake">
+            <img
+              class="pikkukuva cheer"
+              src="../img/pikkucheer4.jpg"
+              onclick="isoCheerSlide(4)"
+              alt="Cheerleading-stuntti, jossa käsillä seisova tyttö nostettu korkealle."
+            />
+          </div>
+
+          <div class="sarake">
+            <img
+              class="pikkukuva cheer"
+              src="../img/pikkucheer5.jpg"
+              onclick="isoCheerSlide(5)"
+              alt="Cheerleading-joukkueen harjoitukset, ryhmät nostavat yhdellä jalalla seisovia nousijoita."
+            />
+          </div>
+        </div>
+      </div>
+    </article>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

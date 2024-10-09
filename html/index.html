@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Tuhkiksen sopukka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tutustu Tuhkikseen." />
+    <meta name="author" content="Venla Tuhkanen" />
+    <link id="tyyli" rel="stylesheet" href="../css/tyyli.css" />
+    <link id="mobiilityyli" rel="stylesheet" href="../css/mobiilityyli.css" />
+    <link id="palkittyyli" rel="stylesheet" href="../css/palkittyyli.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <article id="vasen">
+      <img id="logo" src="../img/logo.png" alt="Tuhkiksen sopukka -logo" />
+      <nav id="konenavi">
+        <h2 id="navigointi">Navigointi</h2>
+        <div id="linkit">
+          <a href="pelinurkka.html">Pelinurkka</a>
+          <br />
+          <a href="taidetunkio.html">Taidetunkio</a>
+          <br />
+          <a href="radiolista.html">Radiolista</a>
+        </div>
+      </nav>
+    </article>
+    <nav id="mobiilinavi">
+      <button id="navinappi" onclick="navigointi()">Navigointi</button>
+      <div id="mobiililinkit">
+        <a href="pelinurkka.html">Pelinurkka</a>
+        <br />
+        <a href="taidetunkio.html">Taidetunkio</a>
+        <br />
+        <a href="radiolista.html">Radiolista</a>
+      </div>
+    </nav>
+    <main>
+      <article id="oikea">
+        <button id="tummanappi" class="painike" onclick="tummaTila()">
+          Valot pois!
+        </button>
+        <button id="valonappi" class="painike" onclick="valoTila()">
+          Valot päälle!
+        </button>
+        <header>
+          <h1>Tervetuloa Tuhkiksen sopukkaan!</h1>
+        </header>
+        <p>
+          <span class="teksti"
+            >Oletko koskaan pohtinut, mitä kaikkea moniydinprosessoriksikin
+            kutsuttujen aivojen pyörittämässä päässäni liikkuukaan? Kurkista,
+            mitä sivuilta löytyy ja olet taas ehkä hieman viisaampi!</span
+          >
+        </p>
+
+        <div class="palkit">
+          <h2>Tieteellisin menetelmin mitattuna olen...</h2>
+          <p id="hopottaja" class="palkki">
+            <span class="palkkiteksti">höpöttäjä 99%</span>
+          </p>
+          <p id="pohtija" class="palkki">
+            <span class="palkkiteksti">pohtija 87%</span>
+          </p>
+          <p id="taiteilija" class="palkki">
+            <span class="palkkiteksti">taiteilijasielu 68%</span>
+          </p>
+          <p id="holmoilija" class="palkki">
+            <span class="palkkiteksti">hölmöilijä 83%</span>
+          </p>
+          <div id="nappi">
+            <button class="painike" onclick="laske()">Laske tulokset!</button>
+          </div>
+        </div>
+
+        <h2>Kovin oleellista tietoa minusta</h2>
+        <p>
+          <span class="teksti"
+            >Rakastan suolakurkkuja, kaiken mahdollisen koristelemista tarroilla
+            ja syksyn sateisia päiviä. Puolestaan aamuheräämisten, tai
+            heräämisen ylipäätään, juoksevien asioiden hoitamisen ja tiskaamisen
+            fani en ole. Aika sekalaista settiä, myönnän. En edes maininnut
+            lempimerionnettomuuksiani tai inhoani maapähkinävoita kohtaan.</span
+          >
+        </p>
+      </article>
+    </main>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+.galleria {
+  box-sizing: border-box;
+  position: relative;
+  margin: 50px 0 50px 0;
+}
+
+.slidet img {
+  width: 100%;
+  border-radius: 13%;
+}
+
+.slidet.intia {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.pikkukuva.intia {
+  cursor: pointer;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edellinen,
+.seuraava {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.seuraava {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.edellinen:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numero {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 30px 30px;
+  position: absolute;
+  top: 0;
+}
+
+.rivi:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sarake {
+  float: left;
+  width: 18.4%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+
+.sarake:last-child {
+  margin-right: 0;
+}
+
+.active.intia,
+.pikkukuva:hover {
+  opacity: 1;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 700px) {
+  .galleria {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.slidet.cheer {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.pikkukuva.cheer {
+  cursor: pointer;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active.cheer,
+.pikkukuva:hover {
+  opacity: 1;
+}

@@ -1,0 +1,76 @@
+
+@media screen and (max-width: 700px) {
+
+    #oikea {
+        width: 100%;
+    }
+
+    #vasen {
+        width: 100%;
+        position: relative;
+    }
+
+    #logo {
+        margin-top: 50px;
+    }
+
+    #konenavi {
+        display: none;
+    }
+
+    #mobiilinavi {
+        text-align: center;
+        border-radius: 13px;
+        box-shadow: 0 9px #da8859;
+        background-color: #e1a565;
+
+        font-size: 24px;
+        font-family: "Leckerli One";
+        color:#4a3a5f;
+        line-height: 200%;
+
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        margin-left: 20%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        }
+
+    #navinappi {
+        cursor: pointer;
+        outline: none;
+        background-color: #e1a565;
+        border: none;
+
+        font-size: 30px;
+        font-family: "Leckerli One";
+        color: #4a3a5f;
+
+        text-shadow:
+        1px 1px 0 #f0d59e,
+        -1px 1px 0 #f0d59e,
+        -1px -1px 0 #f0d59e,
+        1px -1px 0 #f0d59e;
+        }
+    
+
+    #mobiililinkit {
+        background-color: #f0d59e;
+        padding: 10px;
+        border-radius: 13px;
+        margin-top: 20px;
+
+        display: none;
+    }
+
+    #mobiililinkit a {
+        padding: 20px;
+    }
+
+    .spotify {
+        width: 80%;
+    }
+}

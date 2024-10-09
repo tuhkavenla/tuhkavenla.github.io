@@ -1,0 +1,159 @@
+body {
+    color: #f0d59e;
+    font-family: "Nerko One";
+    margin: 50px;
+    font-weight: 500;
+    font-size: 24px;
+    background-image: url("../img/tummatausta.jpg");
+}
+
+#vasen {
+    max-width: 1000px;
+    width: 30%;
+    overflow: visible;
+    float: left;
+    text-align: center;
+    position: fixed;
+    margin-left: -30px;
+}
+
+#logo {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: inline-block;
+        padding: 20px 20px;
+        font-size: 22px;
+        font-family: "Leckerli One";
+        cursor: pointer;
+        outline: none;
+        color: #4a3a5f;
+        background-color: #e1a565;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 9px #da8859;
+
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 170%;
+    margin-bottom: 30px;
+
+    font-family: "Leckerli One";
+
+    text-shadow:
+      1px 1px 0 #f0d59e,
+      -1px 1px 0 #f0d59e,
+      -1px -1px 0 #f0d59e,
+      1px -1px 0 #f0d59e;
+
+    width: 50%;
+
+}
+
+#navigointi {
+    color: #4a3a5f;
+    font-size: 24px;
+    margin-top: 0;
+    text-shadow:
+      1px 1px 0 #f0d59e,
+      -1px 1px 0 #f0d59e,
+      -1px -1px 0 #f0d59e,
+      1px -1px 0 #f0d59e;
+}
+
+#mobiilinavi {
+    display: none;
+}
+
+a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #4a3a5f;
+}
+
+a:hover {color: #8d4f79;}
+
+#oikea {
+    max-width: 1900px;
+    width: 69%;
+
+    float: right;
+    vertical-align: top;
+
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#tummanappi {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#valonappi {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Leckerli One";
+    color: #cc6f5f;
+    font-size: 36px;
+
+    text-shadow:
+      1px 1px 0 #f0d59e,
+      -1px 1px 0 #f0d59e,
+      -1px -1px 0 #f0d59e,
+      1px -1px 0 #f0d59e;
+}
+
+h2 {
+    font-family: "Leckerli One";
+    color: #cc6f5f;
+    font-size: 28px;
+    text-align: center;
+
+    text-shadow:
+      1px 1px 0 #f0d59e,
+      -1px 1px 0 #f0d59e,
+      -1px -1px 0 #f0d59e,
+      1px -1px 0 #f0d59e;
+}
+
+.teksti {
+    background-color: #4a3a5f;
+    border-radius: 10px;
+}
+
+.painike {
+    display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Leckerli One";
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #f0d59e;
+  background-color: #da8859;
+  border: none;
+  border-radius: 13px;
+  box-shadow: 0 9px #cc6f5f;
+}
+
+.painike:hover {background-color: #e6a97a}
+
+.painike:active {
+    background-color: #da8859;
+    box-shadow: 0 5px #cc6f5f;
+    transform: translateY(4px);
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Tuhkiksen sopukka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tutustu Tuhkikseen." />
+    <meta name="author" content="Venla Tuhkanen" />
+    <link id="tyyli" rel="stylesheet" href="../css/tyyli.css" />
+    <link id="mobiilityyli" rel="stylesheet" href="../css/mobiilityyli.css" />
+    <link id="palkittyyli" rel="stylesheet" href="../css/palkittyyli.css" />
+    <link rel="stylesheet" href="../css/radiotyyli.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <article id="vasen">
+      <img id="logo" src="../img/logo.png" alt="Tuhkiksen sopukka -logo" />
+      <nav id="konenavi">
+        <h2 id="navigointi">Navigointi</h2>
+        <div id="linkit">
+          <a href="index.html">Etusivu</a>
+          <br />
+          <a href="pelinurkka.html">Pelinurkka</a>
+          <br />
+          <a href="taidetunkio.html">Taidetunkio</a>
+          <br />
+          <a href="radiolista.html">Radiolista</a>
+        </div>
+      </nav>
+    </article>
+    <nav id="mobiilinavi">
+      <button id="navinappi" onclick="navigointi()">Navigointi</button>
+      <div id="mobiililinkit">
+        <a href="index.html">Etusivu</a>
+        <br />
+        <a href="pelinurkka.html">Pelinurkka</a>
+        <br />
+        <a href="taidetunkio.html">Taidetunkio</a>
+        <br />
+        <a href="radiolista.html">Radiolista</a>
+      </div>
+    </nav>
+    <article id="oikea">
+      <button id="tummanappi" class="painike" onclick="tummaTila()">
+        Valot pois!
+      </button>
+      <button id="valonappi" class="painike" onclick="valoTila()">
+        Valot päälle!
+      </button>
+      <header><h1>Tuhkiksen radiossa pauhaa</h1></header>
+      <p>
+        <span class="teksti"
+          >Sekalaiset setit jatkuvat myös musiikkimakuni puolella.</span
+        >
+      </p>
+
+      <h2 class="kappale">Ado - O</h2>
+      <p>
+        <span class="teksti"
+          >Adolla on oikeus huutaa korvaani minä hetkenä tahansa. Tai kuiskata,
+          sekin sisältyy tähän aidosti (vai Adosti) mestariteokseen. Helposti
+          muun artistin kohdalla sanoisin loistavan instrumentaalin olevan paras
+          asia kappaleessa, mutta Adon laulaminen, kuiskailu, huutaminen,
+          hönkiminen, ihan mikä vaan vie voiton.</span
+        >
+      </p>
+      <iframe
+        class="spotify"
+        src="https://open.spotify.com/embed/track/4QySJOxAfh74N1MzGkXi1n?utm_source=generator"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+
+      <h2 class="kappale">Grimes - Kill V. Maim</h2>
+      <p>
+        <span class="teksti"
+          >Tässä ei muuta tarvitse avata, kuin että kappale on kirjoitettu
+          Kummisetä II:sta tutun Al Pacinon perspektiivistä, paitsi että hän on
+          sukupuoltaan vaihtava ja avaruuden läpi matkustava vampyyri. Ehkä se
+          ei olekaan ihme, että Grimes ja Elon Musk päätyivät yhteen - tosin
+          myös erosivat.</span
+        >
+      </p>
+      <iframe
+        class="spotify"
+        src="https://open.spotify.com/embed/track/3WXhshrs1fzwF3rQE399Gq?utm_source=generator"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+
+      <h2 class="kappale">PSY - NEW FACE</h2>
+      <p>
+        <span class="teksti"
+          >Voin olla vaipunut vaikka kuinka syvään melankoliaan ja murehtia
+          elämää, mutta heti kun tämä pärähtää soimaan esiinnyn kuin olisin taas
+          opiskelijamusikaalin parrasvaloissa. Kappale olisi ansainnut Gangnam
+          Stylen suosion ja enemmän.</span
+        >
+      </p>
+      <iframe
+        class="spotify"
+        src="https://open.spotify.com/embed/track/25YgkxnU4UzEG4ORni69Rw?utm_source=generator"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+
+      <h2 class="kappale">Royal Blood - Blood Hands</h2>
+      <p>
+        <span class="teksti"
+          >Tämä on taas melankoliaan vaipumista varten tai lohdutuksena niihin
+          hetkiin, kun elämä ei hymyile sitten ollenkaan. Hyvin spesifi
+          kivunlievityskeinoni jo yli kahdeksan vuotta.</span
+        >
+      </p>
+      <iframe
+        class="spotify"
+        src="https://open.spotify.com/embed/track/0u2W89AQvH3sDVg7UX6YOT?utm_source=generator"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </article>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

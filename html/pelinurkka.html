@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Tuhkiksen sopukka</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tutustu Tuhkikseen." />
+    <meta name="author" content="Venla Tuhkanen" />
+    <link id="tyyli" rel="stylesheet" href="../css/tyyli.css" />
+    <link id="mobiilityyli" rel="stylesheet" href="../css/mobiilityyli.css" />
+    <link id="palkittyyli" rel="stylesheet" href="../css/palkittyyli.css" />
+    <link rel="stylesheet" href="../css/pelityyli.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article id="vasen">
+      <img id="logo" src="../img/logo.png" alt="Tuhkiksen sopukka -logo" />
+      <nav id="konenavi">
+        <h2 id="navigointi">Navigointi</h2>
+        <div id="linkit">
+          <a href="index.html">Etusivu</a>
+          <br />
+          <a href="pelinurkka.html">Pelinurkka</a>
+          <br />
+          <a href="taidetunkio.html">Taidetunkio</a>
+          <br />
+          <a href="radiolista.html">Radiolista</a>
+        </div>
+      </nav>
+    </article>
+    <nav id="mobiilinavi">
+      <button id="navinappi" onclick="navigointi()">Navigointi</button>
+      <div id="mobiililinkit">
+        <a href="index.html">Etusivu</a>
+        <br />
+        <a href="pelinurkka.html">Pelinurkka</a>
+        <br />
+        <a href="taidetunkio.html">Taidetunkio</a>
+        <br />
+        <a href="radiolista.html">Radiolista</a>
+      </div>
+    </nav>
+    <article id="oikea">
+      <button id="tummanappi" class="painike" onclick="tummaTila()">
+        Valot pois!
+      </button>
+      <button id="valonappi" class="painike" onclick="valoTila()">
+        Valot päälle!
+      </button>
+      <header><h1>Näitä pelejä on tullut pelattua (liikaa)</h1></header>
+      <p>
+        <span class="teksti"
+          >Minäkö tietokonepelinörtti? No ehkä hieman. Jokainen määritteleköön
+          sen omalla tavallaan ja sen, kuulunko kyseiseen kastiin, mutta ainakin
+          pelejä tulee pelattua, analysoitua ja tutkittua aivan liikaa.</span
+        >
+      </p>
+      <div class="galleria peli">
+        <div class="slidet peli">
+          <div class="kuva">
+            <img
+              src="../img/genshin.jpg"
+              alt="Japanilaistyyliset hahmot Raiden Ei ja Yae Miko pelistä Genshin Impact."
+            />
+            <p class="tekijanoikeudet">&#169; MiHoyo, taide Atdan</p>
+          </div>
+
+          <h2 class="pelinimi">Genshin Impact</h2>
+          <p>
+            Pidätkö kuumista animehahmoista, uhkapelaamisesta, valtavan maailman
+            tutkimisesta ja hiki hatussa huhkimisesta? Ehkä sinunkin kannattaisi
+            kokeilla Genshiniä. Äläkä kysy mistä juonessa on kyse, tosin
+            lempihahmojeni ruokamieltymykset osaan kertoa.
+          </p>
+        </div>
+
+        <div class="slidet peli">
+          <div class="kuva">
+            <img
+              src="../img/botw.jpg"
+              alt="Hahmo seisomassa kielekkeellä, josta näkyy autio metsämaisema ja tulivuori taustalla."
+            />
+            <p class="tekijanoikeudet">&#169; Nintendo</p>
+          </div>
+          <h2 class="pelinimi zelda">
+            The Legend of Zelda: Breath of the Wild
+          </h2>
+          <p>
+            Jos haluat tutkia valtavaa maailmaa ilman uhkapelaamista tai
+            hahmojen kuolaamista, tämä on loistava vaihtoehto kokeilla. Juoni
+            tosin saa herkimmille tipan linssiin useammankin kerran, jos olet
+            oikein investoitunut. Valtakunnan pelastamisessa ei ole kiire,
+            keksit kyllä vaikka ja mitä sekoiltavaa.
+          </p>
+        </div>
+        <div class="slidet peli">
+          <div class="kuva">
+            <img
+              src="../img/witcher.jpg"
+              alt="Mies hevosen selässä. Taustalla pieni keskiaikainen kylä, metsää ja vuori."
+            />
+            <p class="tekijanoikeudet">&#169; CDPR</p>
+          </div>
+          <h2 class="pelinimi">The Witcher 3: Wild Hunt</h2>
+          <p>
+            Pääset taas juoksemaan (sekä uimaan, ratsastamaan tai vaikka
+            etenemään kuperkeikoilla) pitkin valtavaa maailmaa. Tosin helposti
+            jumittuu tuntikausiksi pelaamaan ehkä parasta korttipeliä ikinä
+            seikkailemisen sijaan. Tämä ei koko perheen peli ole verisistä
+            taisteluista ja kiusallisesta naisten jyystämisestä johtuen.
+            Kylläkin koko perheeni on peliä pelannut tai seurannut sivusta.
+          </p>
+        </div>
+
+        <!-- painikkeet, joilla liikutaan -->
+        <a class="edellinen peli" onclick="liikuPeliSlide(-1)">&#10094;</a>
+        <a class="seuraava peli" onclick="liikuPeliSlide(1)">&#10095;</a>
+      </div>
+    </article>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

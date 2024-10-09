@@ -1,0 +1,47 @@
+.palkit {
+    background-color: #C9CBA3;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding-left: 30px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+
+    color:#FFE1A8;
+    font-family: "Leckerli One";
+    font-size: 20px;
+    box-shadow: 0 9px #869469;
+
+}
+
+.palkki {
+    width: 0;
+    height: 30px;
+    text-align: right;
+    padding-right: 10px;
+    color: #FFE1A8;
+    margin: 10px 0;
+    position: relative;
+}
+
+.palkkiteksti {
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+
+#hopottaja {
+    background-color: #723d3d;}
+#pohtija {
+     background-color: #a94e33;}
+#taiteilija {
+    background-color: #339558;}
+#holmoilija {
+    background-color: #414663;}
+
+#nappi {
+    text-align: center;
+    padding-bottom: 20px;
+}
