@@ -32,7 +32,7 @@ function tummaTila() {
 }
 
 function valoTila() {
-  document.getElementById("tyyli").setAttribute("href", "../css/tyyli.css");
+  document.getElementById("tyyli").setAttribute("href", "/css/tyyli.css");
   document
     .getElementById("mobiilityyli")
     .setAttribute("href", "/css/mobiilityyli.css");
@@ -90,8 +90,8 @@ let intiaslideIndex = 1;
 let cheerslideIndex = 1;
 
 window.onload = function () {
-  isoIntiaSlide(1);
-  isoCheerSlide(1);
+  naytaIntiaSlide(1);
+  naytaCheerSlide(1);
 };
 
 // intia-gallerian asetukset
