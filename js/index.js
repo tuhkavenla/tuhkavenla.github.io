@@ -89,11 +89,17 @@ function laske() {
 let intiaslideIndex = 1;
 let cheerslideIndex = 1;
 
-window.onload = function () {
-  naytaIntiaSlide(1);
-  naytaCheerSlide(1);
+window.addEventListener('load', function() {
   naytaPeliSlide(1);
-};
+});
+
+window.addEventListener('load', function() {
+  naytaIntiaSlide(1);
+});
+
+window.addEventListener('load', function() {
+  naytaCheerSlide(1);
+});
 
 // intia-gallerian asetukset
 
