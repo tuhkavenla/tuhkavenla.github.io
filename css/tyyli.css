@@ -23,7 +23,7 @@ body {
 }
 
 nav {
-  display: inline-block;
+  display: block;
   padding: 0 20px;
   padding-top: 20px;
   font-size: 22px;
