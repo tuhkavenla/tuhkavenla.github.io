@@ -3,9 +3,11 @@
 function navigointi() {
   let mobiililinkit = document.getElementById("mobiililinkit");
 
-  if (document.getElementById("mobiililinkit").style.display === "none") {
+  if (mobiililinkit.style.display === "none") {
     mobiililinkit.style.display = "block";
-}
+  } else {
+    mobiililinkit.style.display = "none";
+  }
 }
 
 // sivun ulkoasun vaihtavat napit
@@ -44,17 +46,17 @@ function valoTila() {
 
   document.getElementById("valonappi").style.display = "none";
   document.getElementById("tummanappi").style.display = "block";
-
-  tumma = false;
 }
 
-window.addEventListener('load', function() {
+function valoTarkistus() {
   if (tumma === true) {
     tummaTila();
   }
+} 
+
+window.addEventListener('load', function() {
+  valoTarkistus();
 });
-
-
 
 
 // taitopalkkien animaatiot

@@ -47,6 +47,8 @@
         background-color: #E26D5C;
         border: none;
 
+        display: inline-block;
+
         font-size: 30px;
         font-family: "Nerko One";
         color: #472D30;
