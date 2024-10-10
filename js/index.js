@@ -3,23 +3,16 @@
 function navigointi() {
   let mobiililinkit = document.getElementById("mobiililinkit");
 
-  if (mobiililinkit.style.display === "none") {
+  if (document.getElementById("mobiililinkit").style.display === "none") {
     mobiililinkit.style.display = "block";
-  }
-  else if (mobiililinkit.style.display === "block") {
-    mobiililinkit.style.display = "block";}
-  }
-// sivun ulkoasun vaihtavat napit jeejee 
-
-function tummaTila() {
-
-  let tummatila = true;
-  let valotila = false 
+}
 }
 
-function tummaTilaOn () {
+// sivun ulkoasun vaihtavat napit
 
-  if (tummatila === true) {
+let tumma = false;
+
+function tummaTila() {
   document
     .getElementById("tyyli")
     .setAttribute("href", "/css/tummatyyli.css");
@@ -34,17 +27,11 @@ function tummaTilaOn () {
 
   document.getElementById("tummanappi").style.display = "none";
   document.getElementById("valonappi").style.display = "block";
-}
-}
 
-function valoTila () {
-let tummatila = false;
-let valotila = true;
+  tumma = true;
 }
 
-function valoTilaOn() {
-
-  if (valotila === true) {
+function valoTila() {
   document.getElementById("tyyli").setAttribute("href", "/css/tyyli.css");
   document
     .getElementById("mobiilityyli")
@@ -57,11 +44,18 @@ function valoTilaOn() {
 
   document.getElementById("valonappi").style.display = "none";
   document.getElementById("tummanappi").style.display = "block";
-}
+
+  tumma = false;
 }
 
-valoTila();
-tummaTila();
+window.addEventListener('load', function() {
+  if (tumma === true) {
+    tummaTila();
+  }
+});
+
+
+
 
 // taitopalkkien animaatiot
 
