@@ -1,19 +1,25 @@
 // responsiivisuus, navigointipalkin vaihtaminen
 
 function navigointi() {
-  let mobiili = window.matchMedia("(max-width: 700px)");
   let mobiililinkit = document.getElementById("mobiililinkit");
 
-  if (mobiili.matches && mobiililinkit.style.display === "none") {
+  if (mobiililinkit.style.display === "none") {
     mobiililinkit.style.display = "block";
-  } else {
-    mobiililinkit.style.display = "none";
   }
-}
-
+  else if (mobiililinkit.style.display === "block") {
+    mobiililinkit.style.display = "block";}
+  }
 // sivun ulkoasun vaihtavat napit
 
 function tummaTila() {
+
+  let tummatila = true;
+  let valotila = false 
+}
+
+function tummaTilaOn () {
+
+  if (tummatila === true) {
   document
     .getElementById("tyyli")
     .setAttribute("href", "/css/tummatyyli.css");
@@ -29,8 +35,16 @@ function tummaTila() {
   document.getElementById("tummanappi").style.display = "none";
   document.getElementById("valonappi").style.display = "block";
 }
+}
 
-function valoTila() {
+function valoTila () {
+let tummatila = false;
+let valotila = true;
+}
+
+function valoTilaOn() {
+
+  if (valotila === true) {
   document.getElementById("tyyli").setAttribute("href", "/css/tyyli.css");
   document
     .getElementById("mobiilityyli")
@@ -44,6 +58,10 @@ function valoTila() {
   document.getElementById("valonappi").style.display = "none";
   document.getElementById("tummanappi").style.display = "block";
 }
+}
+
+valoTila();
+tummaTila();
 
 // taitopalkkien animaatiot
 
