@@ -27,7 +27,7 @@ nav {
   padding: 0 20px;
   padding-top: 20px;
   font-size: 22px;
-  font-family: "Leckerli One";
+  font-family: "Nerko One";
   cursor: pointer;
   outline: none;
   color: #ffe1a8;
@@ -41,7 +41,7 @@ nav {
   line-height: 170%;
   margin-bottom: 30px;
 
-  font-family: "Leckerli One";
+  font-family: "Nerko One";
 
   text-shadow: 1px 1px 0 #ffe1a8, -1px 1px 0 #ffe1a8, -1px -1px 0 #ffe1a8,
     1px -1px 0 #ffe1a8;
@@ -102,7 +102,7 @@ header {
 }
 
 h1 {
-  font-family: "Leckerli One";
+  font-family: "Nerko One";
   color: #472d30;
   font-size: 36px;
 
@@ -111,7 +111,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Leckerli One";
+  font-family: "Nerko One";
   color: #472d30;
   font-size: 28px;
   text-align: center;
@@ -129,7 +129,7 @@ h2 {
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
-  font-family: "Leckerli One";
+  font-family: "Nerko One";
   cursor: pointer;
   text-align: center;
   outline: none;
