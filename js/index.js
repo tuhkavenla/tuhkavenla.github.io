@@ -9,7 +9,7 @@ function navigointi() {
   else if (mobiililinkit.style.display === "block") {
     mobiililinkit.style.display = "block";}
   }
-// sivun ulkoasun vaihtavat napit
+// sivun ulkoasun vaihtavat napit jeejee 
 
 function tummaTila() {
 
