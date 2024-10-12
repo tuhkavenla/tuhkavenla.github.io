@@ -1,11 +1,11 @@
-// responsiivisuus, navigointipalkin vaihtaminen
+// navigointipalkin vaihtaminen
 
 function navigointi() {
   let mobiililinkit = document.getElementById("mobiililinkit");
 
   if (mobiililinkit.style.display === "none") {
     mobiililinkit.style.display = "block";
-  } else {
+  } else { 
     mobiililinkit.style.display = "none";
   }
 }
@@ -54,10 +54,7 @@ function valoTarkistus() {
   }
 } 
 
-window.addEventListener('load', function() {
   valoTarkistus();
-});
-
 
 // taitopalkkien animaatiot
 
