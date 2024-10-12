@@ -32,7 +32,7 @@
     </article>
     <nav id="mobiilinavi">
       <button id="navinappi" onclick="navigointi()">Navigointi</button>
-      <div id="mobiililinkit">
+      <div id="mobiililinkit" style="display: none;">
         <a href="index.html">Etusivu</a>
         <br />
         <a href="pelinurkka.html">Pelinurkka</a>
@@ -43,10 +43,10 @@
       </div>
     </nav>
     <article id="oikea">
-      <button id="tummanappi" class="painike" onclick="tummaTila()">
+      <button id="tummanappi" class="painike" onclick="tummaTila()" onload="valoTarkistus()">
         Valot pois!
       </button>
-      <button id="valonappi" class="painike" onclick="valoTila()">
+      <button id="valonappi" class="painike" onclick="valoTila()" onload="valoTarkistus()">
         Valot päälle!
       </button>
       <h1>Taidetunkio</h1>

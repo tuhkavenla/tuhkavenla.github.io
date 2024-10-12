@@ -54,8 +54,6 @@ function valoTarkistus() {
   }
 } 
 
-  valoTarkistus();
-
 // taitopalkkien animaatiot
 
 function laske() {
