@@ -12,8 +12,6 @@ function navigointi() {
 
 // sivun ulkoasun vaihtavat napit
 
-let tumma = false;
-
 function tummaTila() {
   document
     .getElementById("tyyli")
@@ -30,7 +28,7 @@ function tummaTila() {
   document.getElementById("tummanappi").style.display = "none";
   document.getElementById("valonappi").style.display = "block";
 
-  tumma = true;
+  localStorage.setItem("teema", "tumma");
 }
 
 function valoTila() {
@@ -46,13 +44,20 @@ function valoTila() {
 
   document.getElementById("valonappi").style.display = "none";
   document.getElementById("tummanappi").style.display = "block";
+
+  localStorage.setItem("teema", "vaalea");
 }
 
-function valoTarkistus() {
-  if (tumma === true) {
+function vaihdaValittuTeema() {
+  const teema = localStorage.getItem("teema");
+  if (teema === "tumma") {
     tummaTila();
+  } else {
+    valoTila(); 
   }
-} 
+}
+
+window.onload = vaihdaValittuTeema;
 
 // taitopalkkien animaatiot
 
