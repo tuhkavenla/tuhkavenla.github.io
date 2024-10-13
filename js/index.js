@@ -23,16 +23,16 @@ function tummaTila() {
     .getElementById("palkittyyli")
     .setAttribute("href", "/css/tummapalkittyyli.css");
 
-  document
-    .getElementById("pelityyli")
-    .setAttribute("href", "/css/tummapelityyli.css");
-
   document.getElementById("logo").setAttribute("src", "../img/tummalogo.png");
 
   document.getElementById("tummanappi").style.display = "none";
   document.getElementById("valonappi").style.display = "block";
 
   localStorage.setItem("teema", "tumma");
+
+  document
+    .getElementById("pelityyli")
+    .setAttribute("href", "/css/tummapelityyli.css");
 }
 
 function valoTila() {
@@ -44,16 +44,16 @@ function valoTila() {
     .getElementById("palkittyyli")
     .setAttribute("href", "/css/palkittyyli.css");
 
-  document
-    .getElementById("pelityyli")
-    .setAttribute("href", "/css/pelityyli.css");
-
   document.getElementById("logo").setAttribute("src", "/img/logo.png");
 
   document.getElementById("valonappi").style.display = "none";
   document.getElementById("tummanappi").style.display = "block";
 
   localStorage.setItem("teema", "vaalea");
+
+  document
+  .getElementById("pelityyli")
+  .setAttribute("href", "/css/pelityyli.css");
 }
 
 function vaihdaValittuTeema() {
