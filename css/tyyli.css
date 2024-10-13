@@ -138,6 +138,9 @@ h2 {
   border: none;
   border-radius: 13px;
   box-shadow: 0 9px #723d46;
+
+  text-shadow: 1px 1px 0 #723d46, -1px 1px 0 #723d46, -1px -1px 0 #723d46,
+    1px -1px 0 #723d46;
 }
 
 .painike:hover {
