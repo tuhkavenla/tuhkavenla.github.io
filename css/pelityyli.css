@@ -36,9 +36,9 @@
 
 .pelinimi {
   font-size: 36px;
-  color: #e26d5c;
-  text-shadow: 1px 1px 0 #723d46, -1px 1px 0 #723d46, -1px -1px 0 #723d46,
-    1px -1px 0 #723d46;
+  color: #723d46;
+  text-shadow: 1px 1px 0 #e26d5c, -1px 1px 0 #e26d5c, -1px -1px 0 #e26d5c,
+    1px -1px 0 #e26d5c;
   background-color: #c9cba3;
   margin-top: -10px;
   padding: 20px;
