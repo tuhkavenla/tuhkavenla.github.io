@@ -13,6 +13,8 @@ function navigointi() {
 // sivun ulkoasun vaihtavat napit
 
 function tummaTila() {
+  document.getElementById("logo").setAttribute("src", "../img/tummalogo.png");
+
   document
     .getElementById("tyyli")
     .setAttribute("href", "/css/tummatyyli.css");
@@ -22,8 +24,6 @@ function tummaTila() {
   document
     .getElementById("palkittyyli")
     .setAttribute("href", "/css/tummapalkittyyli.css");
-
-  document.getElementById("logo").setAttribute("src", "../img/tummalogo.png");
 
   document.getElementById("tummanappi").style.display = "none";
   document.getElementById("valonappi").style.display = "block";
@@ -36,6 +36,8 @@ function tummaTila() {
 }
 
 function valoTila() {
+  document.getElementById("logo").setAttribute("src", "/img/logo.png");
+
   document.getElementById("tyyli").setAttribute("href", "/css/tyyli.css");
   document
     .getElementById("mobiilityyli")
@@ -43,8 +45,6 @@ function valoTila() {
   document
     .getElementById("palkittyyli")
     .setAttribute("href", "/css/palkittyyli.css");
-
-  document.getElementById("logo").setAttribute("src", "/img/logo.png");
 
   document.getElementById("valonappi").style.display = "none";
   document.getElementById("tummanappi").style.display = "block";
