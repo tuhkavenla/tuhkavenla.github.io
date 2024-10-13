@@ -72,11 +72,6 @@
   border-radius: 3px 0 0 3px;
 }
 
-.edellinen:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .slidet.peli {
   display: none;
   position: relative;

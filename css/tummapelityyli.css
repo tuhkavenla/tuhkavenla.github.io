@@ -1,0 +1,82 @@
+.galleria.peli {
+    box-sizing: border-box;
+    position: relative;
+    margin: 50px 20px 50px 20px;
+  }
+  
+  .slidet img {
+    width: 100%;
+  }
+  
+  .slidet {
+    background-color: white;
+    border-radius: 13%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slidet p {
+    padding: 20px;
+  }
+  
+  .kuva {
+    position: relative;
+  }
+  
+  .tekijanoikeudet {
+    font-size: 16px;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    color: white;
+  
+    text-shadow: 1px 1px 0 #723d46, -1px 1px 0 #723d46, -1px -1px 0 #723d46,
+      1px -1px 0 #723d46;
+  }
+  
+  .pelinimi {
+    font-size: 36px;
+    color: #f0d59e;
+    text-shadow: 1px 1px 0 #723d46, -1px 1px 0 #723d46, -1px -1px 0 #723d46,
+      1px -1px 0 #723d46;
+    background-color: #da8859;
+    margin-top: -10px;
+    padding: 20px;
+  }
+  .pelinimi.zelda {
+    font-size: 30px;
+  }
+  
+  .edellinen,
+  .seuraava {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #f0d59e;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+  }
+  
+  .edellinen {
+    left: -50px;
+  }
+  
+  .seuraava {
+    right: -50px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .slidet.peli {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
