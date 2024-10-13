@@ -23,6 +23,10 @@ function tummaTila() {
     .getElementById("palkittyyli")
     .setAttribute("href", "/css/tummapalkittyyli.css");
 
+  document
+    .getElementById("pelityyli")
+    .setAttribute("href", "/css/tummapelityyli.css");
+
   document.getElementById("logo").setAttribute("src", "../img/tummalogo.png");
 
   document.getElementById("tummanappi").style.display = "none";
@@ -39,6 +43,10 @@ function valoTila() {
   document
     .getElementById("palkittyyli")
     .setAttribute("href", "/css/palkittyyli.css");
+
+  document
+    .getElementById("pelityyli")
+    .setAttribute("href", "/css/pelityyli.css");
 
   document.getElementById("logo").setAttribute("src", "/img/logo.png");
 
