@@ -5,7 +5,7 @@ function navigointi() {
 
   if (mobiililinkit.style.display === "none") {
     mobiililinkit.style.display = "block";
-  } else { 
+  } else {
     mobiililinkit.style.display = "none";
   }
 }
@@ -13,11 +13,10 @@ function navigointi() {
 // sivun ulkoasun vaihtavat napit
 
 function tummaTila() {
+  document.getElementById("tyyli").setAttribute("href", "/css/tummatyyli.css");
+
   document.getElementById("logo").setAttribute("src", "../img/tummalogo.png");
 
-  document
-    .getElementById("tyyli")
-    .setAttribute("href", "/css/tummatyyli.css");
   document
     .getElementById("mobiilityyli")
     .setAttribute("href", "/css/tummamobiilityyli.css");
@@ -36,9 +35,10 @@ function tummaTila() {
 }
 
 function valoTila() {
+  document.getElementById("tyyli").setAttribute("href", "/css/tyyli.css");
+
   document.getElementById("logo").setAttribute("src", "/img/logo.png");
 
-  document.getElementById("tyyli").setAttribute("href", "/css/tyyli.css");
   document
     .getElementById("mobiilityyli")
     .setAttribute("href", "/css/mobiilityyli.css");
@@ -52,8 +52,8 @@ function valoTila() {
   localStorage.setItem("teema", "vaalea");
 
   document
-  .getElementById("pelityyli")
-  .setAttribute("href", "/css/pelityyli.css");
+    .getElementById("pelityyli")
+    .setAttribute("href", "/css/pelityyli.css");
 }
 
 function vaihdaValittuTeema() {
@@ -61,7 +61,7 @@ function vaihdaValittuTeema() {
   if (teema === "tumma") {
     tummaTila();
   } else {
-    valoTila(); 
+    valoTila();
   }
 }
 
@@ -110,11 +110,11 @@ function laske() {
 let intiaslideIndex = 1;
 let cheerslideIndex = 1;
 
-window.addEventListener('load', function() {
+window.addEventListener("load", function () {
   naytaIntiaSlide(1);
 });
 
-window.addEventListener('load', function() {
+window.addEventListener("load", function () {
   naytaCheerSlide(1);
 });
 
@@ -196,10 +196,9 @@ function naytaCheerSlide(n) {
 
 let pelislideIndex = 1;
 
-window.addEventListener('load', function() {
+window.addEventListener("load", function () {
   naytaPeliSlide(1);
 });
-
 
 function liikuPeliSlide(n) {
   naytaPeliSlide((pelislideIndex += n));
@@ -221,6 +220,4 @@ function naytaPeliSlide(n) {
   }
 
   pelislidet[pelislideIndex - 1].style.display = "block";
-
 }
-
